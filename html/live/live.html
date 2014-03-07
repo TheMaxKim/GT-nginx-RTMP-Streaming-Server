@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="../flowplayer-3.2.13.min.js"></script>
+<link rel="stylesheet" type="text/css" href="livetheme.css" />
+<title>Georgia Tech Streaming</title>
+</head>
+
+<body>
+<h1 id="streamName"></h1>
+
+<div id="player"></div>
+<p id="viewercount"></p>
+<p id="streaminfo"></p>
+<script type="text/javascript">
+var viewers = 0;
+m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);
+host = m[1];
+name = m[2];
+
+function capitaliseFirstLetter(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+function addApostrophe(string)
+{
+	if (string.charAt(string.length - 1).toLowerCase() == "s") {
+		return string + '\'';
+	} else {
+		return string + '\'s';
+	}
+}
+
+
+
+document.getElementById("streaminfo").innerHTML = "Streaming: <b>rtmp://" + host + ":10200/live/" + name + "</b>";
+
+document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
+
+flowplayer("player", "../flowplayer-3.2.18.swf", {
+	clip: {
+		url: name,
+		live: true,
+		scaling: "fit",
+		provider: "rtmp",
+		onStart: function(clip) {
+			viewers++;
+		document.getElementById("streaminfo").innerHTML = "Viewers: " + viewers;
+		}
+	},
+	canvas: {
+		backgroundGradient: 'none',
+		backgroundColor: '#5E5E5E'
+	},
+
+    plugins: {
+	controls: {
+        	url: '../flowplayer.controls-3.2.16.swf',
+        	height: 25,
+		time: false,
+		backgroundGradient: 'none',
+		backgroundColor: '#5E5E5E',
+		scrubber: false
+        },
+
+	rtmp: {
+            url: "../flowplayer.rtmp-3.2.13.swf",
+            netConnectionUrl: "rtmp://" + host + ":10200/live"
+        }
+    }
+});
+</script>
+
+<a id="backbutton" href="http://65.50.74.205:10201">Back</a>
+
+</body>
+
+</html>
+
+

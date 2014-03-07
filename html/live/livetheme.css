@@ -1,0 +1,46 @@
+html, body
+{
+	background-color:#A7ACFC;
+}
+
+h1
+{
+	color:#14181C;
+	text-align:center;
+}
+
+#streaminfo
+{
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	text-align: center;
+}
+
+#player
+{
+	width:854px;
+	height:480px;
+	margin:0 auto;
+}
+
+#backbutton
+{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:20px;
+	position: fixed;
+	margin:5px;
+	width:100%;
+	text-align: center;
+}
+
+#backbutton:hover 
+{
+	color:#FFFFFF;
+	text-decoration:none;
+	cursor:pointer;
+	font-size:20px;
+	width:100%;
+	text-align: center;
+}

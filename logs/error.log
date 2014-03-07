@@ -1,0 +1,173 @@
+2014/03/06 01:33:55 [notice] 8452#0: signal process started
+2014/03/06 01:38:55 [error] 8759#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2014/03/06 01:38:55 [error] 8759#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2014/03/06 01:39:43 [notice] 8885#0: signal process started
+2014/03/06 03:37:49 [notice] 10250#0: signal process started
+2014/03/06 05:29:29 [error] 3243#0: *2 access forbidden by rule, client: 65.50.74.205, server: localhost, request: "GET /stats HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:29:29 [error] 3243#0: *2 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:29:29 [error] 3243#0: *2 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:29:43 [error] 3243#0: *2 open() "/usr/local/nginx/html/live/test" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /live/test HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:32:21 [notice] 3325#0: signal process started
+2014/03/06 05:35:18 [emerg] 3451#0: invalid number of arguments in "allow" directive in /usr/local/nginx/conf/nginx.conf:139
+2014/03/06 05:36:32 [notice] 3473#0: signal process started
+2014/03/06 05:37:40 [error] 3477#0: *3 open() "/usr/local/nginx/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/stats"
+2014/03/06 05:38:09 [notice] 3503#0: signal process started
+2014/03/06 05:38:58 [error] 3507#0: *4 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:38:58 [error] 3507#0: *4 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:41:56 [notice] 3563#0: signal process started
+2014/03/06 05:42:05 [error] 3569#0: *2 open() "/usr/local/nginx/html/live/test" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /live/test HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:44:10 [error] 3569#0: *7 open() "/usr/local/nginx/html/live/test" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /live/test HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 05:46:05 [notice] 3690#0: signal process started
+2014/03/06 05:54:07 [notice] 3924#0: signal process started
+2014/03/06 05:54:41 [notice] 3946#0: signal process started
+2014/03/06 05:55:17 [notice] 3969#0: signal process started
+2014/03/06 05:57:05 [notice] 4004#0: signal process started
+2014/03/06 05:57:21 [notice] 4017#0: signal process started
+2014/03/06 06:10:36 [notice] 4263#0: signal process started
+2014/03/06 12:44:26 [notice] 2282#0: signal process started
+2014/03/06 12:47:06 [notice] 2739#0: signal process started
+2014/03/06 12:47:52 [error] 2759#0: *3 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 12:47:52 [error] 2759#0: *3 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 12:48:42 [error] 2759#0: *5 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 12:48:42 [error] 2759#0: *5 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 12:56:35 [error] 2759#0: *11 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.23.247, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 12:57:26 [error] 2759#0: *22 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.86.233, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 13:10:34 [notice] 3010#0: signal process started
+2014/03/06 18:23:34 [error] 2783#0: *2 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 18:23:49 [notice] 2893#0: signal process started
+2014/03/06 18:29:36 [error] 3155#0: *4 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 18:29:36 [error] 3155#0: *4 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 18:29:55 [notice] 3175#0: signal process started
+2014/03/06 18:30:46 [notice] 3253#0: signal process started
+2014/03/06 18:30:46 [error] 3253#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/06 18:34:22 [notice] 3302#0: signal process started
+2014/03/06 18:35:30 [notice] 3337#0: signal process started
+2014/03/06 18:37:00 [notice] 3371#0: signal process started
+2014/03/06 18:37:55 [notice] 3396#0: signal process started
+2014/03/06 20:48:33 [error] 3400#0: *30 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.82.128, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 20:56:41 [error] 3400#0: *35 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.105.88, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 21:02:33 [error] 3400#0: *47 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.105.88, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 21:05:36 [notice] 3755#0: signal process started
+2014/03/06 21:29:15 [notice] 3832#0: signal process started
+2014/03/06 21:31:39 [notice] 3874#0: signal process started
+2014/03/06 21:33:09 [notice] 3888#0: signal process started
+2014/03/06 21:35:36 [notice] 3898#0: signal process started
+2014/03/06 21:38:02 [notice] 3907#0: signal process started
+2014/03/06 21:38:45 [notice] 3922#0: signal process started
+2014/03/06 21:39:00 [notice] 3931#0: signal process started
+2014/03/06 21:43:17 [notice] 3940#0: signal process started
+2014/03/06 21:45:13 [notice] 3948#0: signal process started
+2014/03/06 21:45:13 [error] 3948#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/06 21:45:57 [error] 3952#0: *7 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.105.88, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 21:54:59 [notice] 3984#0: signal process started
+2014/03/06 21:55:34 [notice] 3991#0: signal process started
+2014/03/06 22:03:16 [notice] 4022#0: signal process started
+2014/03/06 22:04:28 [notice] 4032#0: signal process started
+2014/03/06 22:04:28 [error] 4032#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/06 22:05:57 [notice] 4091#0: signal process started
+2014/03/06 22:07:58 [notice] 4116#0: signal process started
+2014/03/06 22:19:21 [notice] 4167#0: signal process started
+2014/03/06 22:19:40 [notice] 4170#0: signal process started
+2014/03/06 22:19:40 [error] 4170#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/06 22:22:34 [error] 4174#0: *8 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 22:22:38 [error] 4174#0: *8 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 22:24:50 [notice] 4181#0: signal process started
+2014/03/06 22:25:02 [notice] 4190#0: signal process started
+2014/03/06 22:25:02 [error] 4190#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/06 22:29:45 [emerg] 4325#0: "try_files" directive is duplicate in /usr/local/nginx/conf/nginx.conf:50
+2014/03/06 22:31:09 [emerg] 4333#0: open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:46
+2014/03/06 22:38:33 [emerg] 4394#0: unknown directive "text/css" in /usr/local/nginx/conf/nginx.conf:50
+2014/03/06 22:38:44 [emerg] 4397#0: unknown directive "text/css" in /usr/local/nginx/conf/nginx.conf:50
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:08 [emerg] 4417#0: still could not bind()
+2014/03/06 22:41:36 [emerg] 4422#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:36 [emerg] 4422#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:36 [emerg] 4422#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:36 [emerg] 4422#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:36 [emerg] 4422#0: bind() to 0.0.0.0:10201 failed (98: Address already in use)
+2014/03/06 22:41:36 [emerg] 4422#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/06 22:41:39 [notice] 4424#0: signal process started
+2014/03/06 22:41:54 [error] 4428#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 22:41:58 [notice] 4438#0: signal process started
+2014/03/06 22:42:11 [error] 4444#0: *1 open() "/usr/local/nginx/live/live/crysanthos" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /live/crysanthos HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/"
+2014/03/06 22:42:32 [notice] 4450#0: signal process started
+2014/03/06 22:57:12 [notice] 4520#0: signal process started
+2014/03/06 22:57:57 [notice] 4555#0: signal process started
+2014/03/06 23:01:17 [notice] 4610#0: signal process started
+2014/03/06 23:33:48 [error] 4669#0: *21 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 23:36:26 [notice] 4683#0: signal process started
+2014/03/06 23:37:05 [error] 4688#0: *1 rewrite or internal redirection cycle while internally redirecting to "/", client: 65.50.127.147, server: localhost, request: "GET / HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 23:37:09 [error] 4688#0: *2 rewrite or internal redirection cycle while internally redirecting to "/", client: 65.50.127.147, server: localhost, request: "GET / HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/06 23:37:18 [error] 4688#0: *3 rewrite or internal redirection cycle while internally redirecting to "/", client: 65.50.127.147, server: localhost, request: "GET / HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/06 23:37:26 [notice] 4690#0: signal process started
+2014/03/06 23:52:58 [notice] 4762#0: signal process started
+2014/03/07 02:22:55 [notice] 5090#0: signal process started
+2014/03/07 02:23:34 [notice] 5100#0: signal process started
+2014/03/07 02:23:43 [notice] 5106#0: signal process started
+2014/03/07 02:39:22 [notice] 5166#0: signal process started
+2014/03/07 02:40:19 [notice] 5181#0: signal process started
+2014/03/07 02:43:29 [notice] 5212#0: signal process started
+2014/03/07 03:01:30 [error] 5229#0: *44 open() "/usr/local/nginx/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/stats"
+2014/03/07 03:01:46 [error] 5229#0: *44 open() "/usr/local/nginx/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/stats"
+2014/03/07 03:01:57 [notice] 5396#0: signal process started
+2014/03/07 03:04:30 [error] 5400#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 166.205.67.168, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 04:17:07 [error] 5400#0: *4 open() "/usr/local/nginx/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/stats"
+2014/03/07 04:58:43 [error] 5400#0: *9 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 04:59:02 [error] 5400#0: *9 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 04:59:46 [error] 5400#0: *9 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 04:59:49 [error] 5400#0: *9 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:02:16 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:02:17 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:02:23 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:02:50 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:02:58 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:02:59 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:03:05 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:03:14 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:03:28 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:03:44 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:03:49 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:04:09 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:04:13 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/"
+2014/03/07 05:04:14 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:04:57 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:05:37 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:05:45 [error] 5400#0: *12 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:06:14 [notice] 5847#0: signal process started
+2014/03/07 05:06:22 [error] 5851#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:06:45 [error] 5851#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:09:33 [error] 5851#0: *6 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:09:37 [error] 5851#0: *7 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:10:03 [error] 5851#0: *7 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:10:10 [error] 5851#0: *7 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:10:11 [error] 5851#0: *7 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:10:33 [error] 5851#0: *6 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:10:45 [notice] 5898#0: signal process started
+2014/03/07 05:10:48 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:01 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:01 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:02 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:27 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:29 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:36 [error] 5902#0: *5 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:38 [error] 5902#0: *5 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:11:58 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:12:02 [error] 5902#0: *5 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:12:03 [error] 5902#0: *5 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:12:36 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:12:43 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:12:45 [error] 5902#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.13.min.js" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.13.min.js HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:14:51 [notice] 5940#0: signal process started
+2014/03/07 05:14:55 [error] 5944#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.18.swf" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.18.swf HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:14:56 [error] 5944#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.18.swf" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.18.swf HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
+2014/03/07 05:24:03 [error] 5944#0: *14 live: already publishing, client: 65.50.127.147, server: 0.0.0.0:10200
+2014/03/07 05:31:14 [notice] 6253#0: signal process started
