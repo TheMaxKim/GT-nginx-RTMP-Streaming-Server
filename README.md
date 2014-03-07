@@ -28,7 +28,7 @@ Running
 -------
 Replace the directories and their contents within /usr/local/nginx with the directories from this repository.  
 
-Run nginx, typically installed to '/usr/local/nginx/sbin/nginx
+Run nginx, typically installed to <code>/usr/local/nginx/sbin/nginx</code>
 
 To run nginx  
 <pre><code>$ sudo /usr/local/nginx/sbin/nginx</code></pre>  
