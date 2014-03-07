@@ -26,12 +26,12 @@ $ sudo make install</code></pre>
 
 Running
 -------
-Simply run nginx, typically installed to '/usr/local/nginx/sbin/nginx
+Replace the directories and their contents within /usr/local/nginx with the directories from this repository.  
+
+Run nginx, typically installed to '/usr/local/nginx/sbin/nginx
 
 To run nginx  
 <pre><code>$ sudo /usr/local/nginx/sbin/nginx</code></pre>  
 
 To stop nginx  
 <pre><code>$ sudo /usr/local/nginx/sbin/nginx -s stop</code></pre>   
-
-Then simply replace the directories and their contents within /usr/local/nginx with the directories from this repository to test it out
