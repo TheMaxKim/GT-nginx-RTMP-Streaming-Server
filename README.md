@@ -5,33 +5,33 @@ decrease reliance on delayed twitch.tv servers and provide a communal setting fo
 
 Building
 ---------
-Install packages for building nginx
-'$ sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev'
+Install packages for building nginx  
+<pre><code>$ sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev</code></pre>  
 
-Download nginx tarball
-'$ wget http://nginx.org/download/nginx-1.5.11.tar.gz'
+Download nginx tarball  
+<pre><code>$ wget http://nginx.org/download/nginx-1.5.11.tar.gz</code></pre>  
 
-Download rtmp module for nginx
-'$ wget https://github.com/arut/nginx-rtmp-module/archive/master.zip'
+Download rtmp module for nginx  
+<pre><code>$ wget https://github.com/arut/nginx-rtmp-module/archive/master.zip</code></pre>  
 
-Extract both downloads
-'$ tar -zxvf nginx-1.5.11.tar.gz
-$ unzip master.zip
-$ cd nginx-1.5.11'
+Extract both downloads  
+<pre><code>$ tar -zxvf nginx-1.5.11.tar.gz  
+$ unzip master.zip  
+$ cd nginx-1.5.11</code></pre>  
 
 Build nginx
-'$ ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module-master
-$ make
-$ sudo make install'  
+<pre><code>$ ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module-master  
+$ make  
+$ sudo make install</code></pre>  
 
 Running
 -------
-Simply run nginx, typically installed to '/usr/local/nginx/sbin/nginx'
+Simply run nginx, typically installed to '/usr/local/nginx/sbin/nginx
 
-To run nginx
-'$ sudo /usr/local/nginx/sbin/nginx'
+To run nginx  
+<pre><code>$ sudo /usr/local/nginx/sbin/nginx</code></pre>  
 
-To stop nginx
-'$ sudo /usr/local/nginx/sbin/nginx -s stop'
+To stop nginx  
+<pre><code>$ sudo /usr/local/nginx/sbin/nginx -s stop</code></pre>   
 
 Then simply replace the directories and their contents within /usr/local/nginx with the directories from this repository to test it out
