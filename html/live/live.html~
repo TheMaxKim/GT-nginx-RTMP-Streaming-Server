@@ -7,15 +7,12 @@
 <link rel="stylesheet" type="text/css" href="livetheme.css" />
 <title>Georgia Tech Streaming</title>
 </head>
-
 <body>
 <h1 id="streamName"></h1>
 
 <div id="player"></div>
-<p id="viewercount"></p>
 <p id="streaminfo"></p>
 <script type="text/javascript">
-var viewers = 0;
 m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);
 host = m[1];
 name = m[2];
@@ -34,8 +31,9 @@ function addApostrophe(string)
 }
 
 
-
-document.getElementById("streaminfo").innerHTML = "Streaming: <b>rtmp://" + host + ":10200/live/" + name + "</b>";
+<!--
+document.getElementById("streaminfo").innerHTML = "Streaming: <b>rtmp://" + host + ":80/live/" + name + "</b>";
+-->
 
 document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
 
@@ -45,9 +43,7 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 		live: true,
 		scaling: "fit",
 		provider: "rtmp",
-		onStart: function(clip) {
-			viewers++;
-		}
+		bufferLength: 0
 	},
 	canvas: {
 		backgroundGradient: 'none',
@@ -70,10 +66,12 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
         }
     }
 });
+
+
 </script>
-
-<a id="backbutton" href="http://65.50.74.205:10201">Back</a>
-
+<!--
+<a id="backbutton" href="http://gtstreams.com">Back</a>
+-->
 </body>
 
 </html>

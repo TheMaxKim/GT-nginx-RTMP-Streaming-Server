@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="../flowplayer-3.2.13.min.js"></script>
-<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="theme.css" />
 <title>Georgia Tech Streaming</title>
 </head>
 
@@ -11,7 +11,7 @@
 
 <h1>Georgia Tech Streaming</h1>
 
-<a href="http://65.50.74.205:10201/live/crysanthos">Crysanthos</a>
+<a href="http://65.50.74.205/live/crysanthos">Crysanthos</a>
 
 </body>
 

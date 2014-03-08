@@ -171,3 +171,84 @@
 2014/03/07 05:14:56 [error] 5944#0: *1 open() "/usr/local/nginx/html/flowplayer-3.2.18.swf" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /flowplayer-3.2.18.swf HTTP/1.1", host: "65.50.74.205:10201", referrer: "http://65.50.74.205:10201/live/crysanthos"
 2014/03/07 05:24:03 [error] 5944#0: *14 live: already publishing, client: 65.50.127.147, server: 0.0.0.0:10200
 2014/03/07 05:31:14 [notice] 6253#0: signal process started
+2014/03/07 13:25:25 [error] 2579#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/07 13:25:25 [error] 2579#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/07 13:30:34 [notice] 2827#0: signal process started
+2014/03/07 13:31:54 [error] 2955#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/07 13:31:54 [error] 2955#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/07 13:32:14 [notice] 2959#0: signal process started
+2014/03/07 13:34:28 [notice] 3177#0: signal process started
+2014/03/07 15:13:59 [notice] 3517#0: signal process started
+2014/03/07 15:13:59 [error] 3517#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/07 15:17:29 [notice] 3764#0: signal process started
+2014/03/07 15:19:20 [error] 3769#0: *5 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/07 15:19:20 [error] 3769#0: *5 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/07 15:29:11 [notice] 4021#0: signal process started
+2014/03/07 16:58:30 [error] 4025#0: *5 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/07 16:58:30 [error] 4025#0: *5 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/08 02:27:47 [notice] 2565#0: signal process started
+2014/03/08 02:29:07 [emerg] 2688#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:07 [emerg] 2688#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:07 [emerg] 2688#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:07 [emerg] 2688#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:07 [emerg] 2688#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:20 [notice] 2691#0: signal process started
+2014/03/08 02:29:20 [error] 2691#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/08 02:29:22 [emerg] 2693#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:22 [emerg] 2693#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:22 [emerg] 2693#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:29:22 [emerg] 2693#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:30:03 [emerg] 2748#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:30:03 [emerg] 2748#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:30:03 [emerg] 2748#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/08 02:30:08 [notice] 2750#0: signal process started
+2014/03/08 02:30:08 [error] 2750#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/08 02:41:17 [notice] 2815#0: signal process started
+2014/03/08 02:43:36 [error] 3044#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 02:44:15 [notice] 3174#0: signal process started
+2014/03/08 02:45:19 [notice] 3190#0: signal process started
+2014/03/08 02:54:24 [notice] 3209#0: signal process started
+2014/03/08 02:54:50 [notice] 3218#0: signal process started
+2014/03/08 02:54:57 [error] 3222#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:78"
+2014/03/08 02:54:57 [error] 3222#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:78"
+2014/03/08 03:00:57 [notice] 3255#0: signal process started
+2014/03/08 03:31:30 [error] 3261#0: *7 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 03:31:30 [error] 3261#0: *7 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 05:14:56 [error] 3261#0: *10 "/usr/local/nginx/html/HNAP1/index.html" is not found (2: No such file or directory), client: 200.125.36.122, server: localhost, request: "GET /HNAP1/ HTTP/1.1", host: "65.50.74.205", referrer: "http://65.50.74.205/"
+2014/03/08 06:11:21 [notice] 3443#0: signal process started
+2014/03/08 10:55:09 [error] 2355#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 10:55:09 [error] 2355#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 13:14:08 [error] 2355#0: *6 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 188.215.42.11, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 14:03:25 [error] 2355#0: *8 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.82.128, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com"
+2014/03/08 14:03:39 [error] 2355#0: *10 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com"
+2014/03/08 14:03:39 [error] 2355#0: *10 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com"
+2014/03/08 14:52:49 [notice] 2565#0: signal process started
+2014/03/08 14:55:40 [error] 2698#0: *9 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com:78"
+2014/03/08 14:55:40 [error] 2698#0: *9 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com:78"
+2014/03/08 14:56:00 [notice] 2706#0: signal process started
+2014/03/08 14:57:50 [error] 2710#0: *3 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205"
+2014/03/08 14:57:56 [notice] 2797#0: signal process started
+2014/03/08 15:01:05 [notice] 2812#0: signal process started
+2014/03/08 15:01:14 [notice] 2818#0: signal process started
+2014/03/08 15:01:29 [notice] 2824#0: signal process started
+2014/03/08 15:02:50 [notice] 2842#0: signal process started
+2014/03/08 15:02:50 [error] 2842#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2014/03/08 15:03:35 [notice] 2853#0: signal process started
+2014/03/08 15:05:19 [notice] 2863#0: signal process started
+2014/03/08 15:09:36 [notice] 2965#0: signal process started
+2014/03/08 15:10:00 [notice] 2973#0: signal process started
+2014/03/08 15:10:50 [notice] 2981#0: signal process started
+2014/03/08 15:12:28 [notice] 2996#0: signal process started
+2014/03/08 15:26:06 [error] 3000#0: *6 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com:10201"
+2014/03/08 15:26:06 [error] 3000#0: *6 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 128.61.81.213, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "gtstreams.com:10201"
+2014/03/08 15:28:31 [error] 3000#0: *12 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/08 15:28:31 [error] 3000#0: *12 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "65.50.74.205:10201"
+2014/03/08 15:49:58 [notice] 3157#0: signal process started
+2014/03/08 16:09:55 [emerg] 3272#0: unknown directive "buflen:" in /usr/local/nginx/conf/nginx.conf:140
+2014/03/08 16:10:02 [emerg] 3274#0: unknown directive "buflen:" in /usr/local/nginx/conf/nginx.conf:140
+2014/03/08 16:10:25 [emerg] 3277#0: unknown directive "buflen_time:" in /usr/local/nginx/conf/nginx.conf:140
+2014/03/08 16:10:33 [emerg] 3279#0: invalid number of arguments in "buflen" directive in /usr/local/nginx/conf/nginx.conf:140
+2014/03/08 16:10:51 [emerg] 3283#0: unknown directive "buflen:" in /usr/local/nginx/conf/nginx.conf:140
+2014/03/08 16:23:26 [notice] 3321#0: signal process started
+2014/03/08 16:25:27 [notice] 3329#0: signal process started
+2014/03/08 16:51:49 [notice] 3625#0: signal process started
