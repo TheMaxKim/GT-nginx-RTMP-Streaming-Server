@@ -10,8 +10,14 @@
 <body>
 <h1 id="streamName"></h1>
 
-<div id="player"></div>
+<div class="wrapper">
+	<div class="sixteen-by-nine-aspect-ratio"></div>
+	<div id="player"></div>
+</div>
+
+
 <p id="streaminfo"></p>
+
 <script type="text/javascript">
 m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);
 host = m[1];
@@ -31,9 +37,9 @@ function addApostrophe(string)
 }
 
 
-<!--
-document.getElementById("streaminfo").innerHTML = "Streaming: <b>rtmp://" + host + ":80/live/" + name + "</b>";
--->
+
+//document.getElementById("streaminfo").innerHTML = "Streaming: <b>rtmp://" + host + ":80/live/" + name + "</b>";
+
 
 document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
 
@@ -47,7 +53,7 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 	},
 	canvas: {
 		backgroundGradient: 'none',
-		backgroundColor: '#5E5E5E'
+		backgroundColor: '#000000'
 	},
 
     plugins: {
@@ -56,8 +62,23 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
         	height: 25,
 		time: false,
 		backgroundGradient: 'none',
-		backgroundColor: '#5E5E5E',
-		scrubber: false
+		backgroundColor: '#000000',
+		opacity: 0.6,
+		scrubber: false,
+		volumeColor: '#248AFF',
+			    fullscreen: {
+            url: "flowplayer.controls-3.2.16.swf",
+            bottom:0,
+		padding: 0,
+		margin: 0,
+		right: 0,
+		backgroundGradient: 'none',
+		backgroundColor: 'transparent',
+		fullscreen: true,
+            all: false,
+            height:25,
+            width:50
+        }
         },
 
 	rtmp: {

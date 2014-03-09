@@ -10,8 +10,14 @@
 <body>
 <h1 id="streamName"></h1>
 
-<div id="player"></div>
+<div class="wrapper">
+	<div class="sixteen-by-nine-aspect-ratio"></div>
+	<div id="player"></div>
+</div>
+
+
 <p id="streaminfo"></p>
+
 <script type="text/javascript">
 m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);
 host = m[1];
@@ -47,7 +53,7 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 	},
 	canvas: {
 		backgroundGradient: 'none',
-		backgroundColor: '#5E5E5E'
+		backgroundColor: '#000000'
 	},
 
     plugins: {
@@ -56,8 +62,10 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
         	height: 25,
 		time: false,
 		backgroundGradient: 'none',
-		backgroundColor: '#5E5E5E',
-		scrubber: false
+		backgroundColor: '#000000',
+		opacity: 0.6,
+		scrubber: false,
+		volumeColor: '#248AFF'
         },
 
 	rtmp: {

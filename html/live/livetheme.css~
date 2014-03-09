@@ -1,6 +1,6 @@
 html, body
 {
-	background-color:#A7ACFC;
+	background-color:#333333;
 }
 
 h1
@@ -17,11 +17,31 @@ h1
 	text-align: center;
 }
 
+.wrapper {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.sixteen-by-nine-aspect-ratio { padding-bottom: 56.25% }
+
 #player
 {
-	width:854px;
-	height:480px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*width:854px;
+	height:480px;*/
 	margin:0 auto;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 40px #474747;
+	-moz-box-shadow: 0 0 40px #474747;
+	box-shadow: 0 0 40px #474747;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 
 #backbutton
@@ -30,6 +50,7 @@ h1
 	text-decoration:none;
 	font-size:20px;
 	position: fixed;
+	margin:5px;
 	width:100%;
 	text-align: center;
 }
