@@ -9,11 +9,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1a1a1a', endColorstr='#ff000000', GradientType=0);
 }
 .navbar-custom .navbar-brand {
-  color: #8c8c8c;
+  color: #ffffff;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
-  color: #737373;
+  color: #ffffff;
   background-color: transparent;
 }
 .navbar-custom .navbar-text {
@@ -26,6 +26,8 @@
 .navbar-custom .navbar-nav > li > a:focus {
   color: #ffffff;
   background-color: transparent;
+  border-bottom-
+  text-decoration: underline;
 }
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom .navbar-nav > .active > a:hover,
@@ -107,4 +109,36 @@
 }
 .navbar-custom .navbar-link:hover {
   color: #ffffff;
+}
+h2,h4 {
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+}
+body {
+	background-color: #262626;
+}
+
+.wrapper {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.sixteen-by-nine-aspect-ratio { padding-bottom: 56.25% }
+
+#player
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*width:854px;
+	height:480px;*/
+	margin:0 auto;
+	background-color: #000;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }

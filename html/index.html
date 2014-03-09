@@ -1,25 +1,113 @@
 <html>
 
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="../flowplayer-3.2.13.min.js"></script>
-<link rel="stylesheet" type="text/css" href="theme.css" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<title>Georgia Tech Streaming</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+ 	<title>Georgia Tech Streaming</title>
+
+ 	<!-- Bootstrap -->
+ 	<link href="css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
+	<!-- Navbar -->
+<nav class="navbar navbar-custom" role="navigation">
+  	<div class="container">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="#">GT Streaming</a>
+    	</div>
 
-<h1>Georgia Tech Streaming</h1>
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		<ul class="nav navbar-nav pull-right" id="section-links">
+    			<li class="active"><a href="#home">Home</a></li>
+    			<li class="dropdown">
+    				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Streams <b class="caret"></b></a>
+    				<ul class="dropdown-menu">
+    					<li><a href="/live/crysanthos">Crysanthos</a></li>
+    					<li><a href="/live/xumasta">XuMasta</a></li>
+    					<li><a href="/live/sunar">Sunar</a></li>
+    					<li><a href="/live/deadjo">Deadjo</a></li>
+    					<li><a href="/live/shizoli">Shizoli</a></li>
+    				</ul>
+    			</li>	 
+    			<li><a href="#aboutus">About Us</a></li>   				
+    		</ul>
+    	</div>
+    </div>
+</nav>
 
-<a href="/live/crysanthos">Crysanthos</a>
-<a href="/live/sunar">Sunar</a>
-<a href="/live/Deadjo">Deadjo</a>
-<a href="/live/xumasta">Xumasta</a>
-<a href="/live/shizoli">Shizoli</a>
-<p style="text-align:center">Welcome to the bare bones tech demo of the GT streaming project.</p>
+<div id="home"></div>
+	<h2>Featured Stream</h2>
+
+	<div class="wrapper">
+	<div class="sixteen-by-nine-aspect-ratio"></div>
+	<div id="player"></div>
+</div>
 
 
+<p id="streaminfo"></p>
+
+<script type="text/javascript">
+
+m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/live\/(.*)$/);
+
+host = m[1];
+name = "crysanthos";
+
+document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
+
+flowplayer("player", "flowplayer-3.2.18.swf", {
+	clip: {
+		url: name,
+		live: true,
+		scaling: "fit",
+		provider: "rtmp",
+		bufferLength: 0
+	},
+	canvas: {
+		backgroundGradient: 'none',
+		backgroundColor: '#000000'
+	},
+
+    plugins: {
+	controls: {
+        	url: 'flowplayer.controls-3.2.16.swf',
+        	height: 25,
+		time: false,
+		backgroundGradient: 'none',
+		backgroundColor: '#000000',
+		opacity: 0.6,
+		scrubber: false,
+		volumeColor: '#248AFF'
+        },
+
+	rtmp: {
+            url: "flowplayer.rtmp-3.2.13.swf",
+            netConnectionUrl: "rtmp://" + host + ":10200/live"
+        }
+    }
+});
+
+
+</script>
+
+
+<div id="aboutus"></div>
+	<h4>Welcome to the bare bones tech demo of the GT streaming project.</h4>
+
+
+
+<!--JavaScript-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
 
 </body>
 
