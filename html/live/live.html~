@@ -10,7 +10,6 @@
 </head>
 <body>
 <h1 id="streamName"></h1>
-
 <div class="wrapper">
 	<div class="sixteen-by-nine-aspect-ratio"></div>
 	<div id="player"></div>
@@ -20,7 +19,6 @@
 <p id="streaminfo"></p>
 
 <script type="text/javascript">
-/*m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);*/
 
 m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/live\/(.*)$/);
 
@@ -81,6 +79,7 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 
 
 </script>
+
 <!--
 <a id="backbutton" href="http://gtstreams.com">Back</a>
 -->
