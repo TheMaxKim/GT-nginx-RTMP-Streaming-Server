@@ -110,6 +110,13 @@
 .navbar-custom .navbar-link:hover {
   color: #ffffff;
 }
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
 body {
 	background-color: #262626;
 }
