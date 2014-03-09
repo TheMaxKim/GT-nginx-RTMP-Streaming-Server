@@ -61,8 +61,6 @@ m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/live\/(.*)$/);
 host = m[1];
 name = "crysanthos";
 
-document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
-
 flowplayer("player", "flowplayer-3.2.18.swf", {
 	clip: {
 		url: name,
