@@ -137,12 +137,13 @@ rtmp {
 		wait_key on;
 		wait_video on;
 		chunk_size 4096;
-		buflen: 0.1s;
+		buflen 0s;
 
 		application live {
 			live on;
 			record off;
 			allow play all;
+			#push rtmp://live-iad.twitch.tv/app/live_57801912_TPcyybdZf87FGmUp3rpF0Q9CnNmBuI;
 		}
 	}
 }

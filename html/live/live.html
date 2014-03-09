@@ -4,6 +4,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="../flowplayer-3.2.13.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="livetheme.css" />
 <title>Georgia Tech Streaming</title>
 </head>
@@ -19,7 +20,10 @@
 <p id="streaminfo"></p>
 
 <script type="text/javascript">
-m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);
+/*m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+):[0-9]+\/live\/(.*)$/);*/
+
+m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/live\/(.*)$/);
+
 host = m[1];
 name = m[2];
 
