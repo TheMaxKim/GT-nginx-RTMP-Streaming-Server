@@ -121,6 +121,10 @@ body {
 	background-color: #262626;
 }
 
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 #streaminfo
 {
 	position: fixed;
