@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="../flowplayer-3.2.13.min.js"></script>
+<script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!-- Bootstrap -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -33,11 +33,11 @@
     			<li class="dropdown">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Streams <b class="caret"></b></a>
     				<ul class="dropdown-menu">
-    					<li><a href="/live/crysanthos">Crysanthos</a></li>
-    					<li><a href="/live/xumasta">XuMasta</a></li>
-    					<li><a href="/live/sunar">Sunar</a></li>
-    					<li><a href="/live/deadjo">Deadjo</a></li>
-    					<li><a href="/live/shizoli">Shizoli</a></li>
+    					<li><a href="/crysanthos">Crysanthos</a></li>
+    					<li><a href="/xumasta">XuMasta</a></li>
+    					<li><a href="/sunar">Sunar</a></li>
+    					<li><a href="/deadjo">Deadjo</a></li>
+    					<li><a href="/shizoli">Shizoli</a></li>
     				</ul>
     			</li>	 
     			<li><a href="#aboutus">About Us</a></li>   				
@@ -57,7 +57,7 @@
 
 <script type="text/javascript">
 
-m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/live\/(.*)$/);
+m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/(.*)$/i);
 
 host = m[1];
 name = m[2];
@@ -82,7 +82,7 @@ function addApostrophe(string)
 
 document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
 
-flowplayer("player", "../flowplayer-3.2.18.swf", {
+flowplayer("player", "flowplayer-3.2.18.swf", {
 	clip: {
 		url: name,
 		live: true,
@@ -97,18 +97,18 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 
     plugins: {
 	controls: {
-        	url: '../flowplayer.controls-3.2.16.swf',
+        	url: 'flowplayer.controls-3.2.16.swf',
         	height: 25,
 		time: false,
 		backgroundGradient: 'none',
 		backgroundColor: '#000000',
 		opacity: 0.6,
 		scrubber: false,
-		volumeColor: '#248AFF'
+		volumeColor: '#248AFF'		
         },
 
 	rtmp: {
-            url: "../flowplayer.rtmp-3.2.13.swf",
+            url: "flowplayer.rtmp-3.2.13.swf",
             netConnectionUrl: "rtmp://" + host + ":10200/live"
         }
     }
@@ -124,7 +124,6 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 <!--JavaScript-->
 <script src="../js/jquery-2.1.0.min.js"></script>
 <script src="../js/bootstrap.js"></script>
-<script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
 </body>
 
 </html>
