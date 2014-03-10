@@ -33,7 +33,7 @@ http {
     #gzip  on;
 
     server {
-        listen       10201;
+        listen       80;
         server_name  localhost;
 
         #charset koi8-r;
@@ -55,10 +55,14 @@ http {
 	}
 
 	location = /stats {
-		allow 127.0.0.1;
+		allow all;
 		rtmp_stat all;
 		rtmp_stat_stylesheet stat.xsl;
 	}
+
+        location /stat.xsl {
+           root html;
+        }
 
         #error_page  404              /404.html;
 

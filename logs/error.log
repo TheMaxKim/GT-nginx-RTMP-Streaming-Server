@@ -288,3 +288,80 @@
 2014/03/08 22:46:34 [notice] 5112#0: signal process started
 2014/03/08 23:56:24 [notice] 5273#0: signal process started
 2014/03/09 16:36:44 [notice] 6761#0: signal process started
+2014/03/09 16:38:02 [error] 6784#0: *1 open() "/usr/local/nginx/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 16:45:54 [error] 6784#0: *10 open() "/usr/local/nginx/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:01:25 [notice] 7025#0: signal process started
+2014/03/09 17:06:58 [notice] 7213#0: signal process started
+2014/03/09 17:07:08 [error] 7217#0: *3 open() "/home/nginx-rtmp-module-master/stat.xsl/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:32 [notice] 7224#0: signal process started
+2014/03/09 17:07:44 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:45 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:45 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:46 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:46 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:46 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:07:46 [error] 7228#0: *2 open() "/home/nginx-rtmp-module-master/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 17:10:06 [notice] 7268#0: signal process started
+2014/03/09 17:11:39 [notice] 7307#0: signal process started
+2014/03/09 17:16:27 [notice] 7329#0: signal process started
+2014/03/09 19:32:21 [notice] 7478#0: signal process started
+2014/03/09 19:36:39 [error] 7586#0: *1 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stats"
+2014/03/09 19:37:54 [notice] 7613#0: signal process started
+2014/03/09 19:37:58 [error] 7617#0: *1 open() "/usr/local/nginx/html/stats" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stats HTTP/1.1", host: "gtstreams.com"
+2014/03/09 19:38:00 [error] 7617#0: *1 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:38:41 [notice] 7652#0: signal process started
+2014/03/09 19:42:43 [error] 7762#0: *1 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "65.50.74.205", referrer: "http://65.50.74.205/stat"
+2014/03/09 19:42:47 [error] 7762#0: *3 open() "/usr/local/nginx/html/stats" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stats HTTP/1.1", host: "gtstreams.com"
+2014/03/09 19:42:49 [error] 7762#0: *3 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:43:07 [error] 7762#0: *3 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:43:09 [error] 7762#0: *3 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:43:20 [error] 7762#0: *3 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:43:38 [error] 7762#0: *12 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:43:47 [error] 7762#0: *13 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:44:58 [error] 7762#0: *14 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.127.147, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat.xsl"
+2014/03/09 19:45:47 [error] 7762#0: *18 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 128.61.105.88, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:46:09 [error] 7762#0: *19 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 128.61.105.88, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:50:05 [error] 7762#0: *25 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:51:12 [error] 7762#0: *26 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:51:41 [notice] 7911#0: signal process started
+2014/03/09 19:51:44 [error] 7915#0: *1 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:51:45 [error] 7915#0: *1 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:51:54 [error] 7915#0: *1 open() "/usr/local/ngnix/html/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:52:46 [notice] 7935#0: signal process started
+2014/03/09 19:52:50 [error] 7939#0: *1 open() "/usr/local/nginx/html/stats" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stats HTTP/1.1", host: "gtstreams.com"
+2014/03/09 19:52:53 [error] 7939#0: *1 open() "/usr/local/ngnix/html/stat.xsl/stat.xsl" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /stat.xsl HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/stat"
+2014/03/09 19:58:25 [emerg] 7961#0: invalid number of arguments in "try_files" directive in /usr/local/nginx/conf/nginx.conf:65
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/09 19:58:38 [emerg] 7964#0: bind() to 0.0.0.0:10200 failed (98: Address already in use)
+2014/03/09 19:58:41 [notice] 7966#0: signal process started
+2014/03/09 20:01:56 [notice] 8016#0: signal process started
+2014/03/09 20:16:35 [notice] 8054#0: signal process started
+2014/03/09 20:16:40 [error] 8058#0: *1 open() "/usr/local/nginx/html/livetheme.css" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /livetheme.css HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/crysanthos"
+2014/03/09 20:16:40 [error] 8058#0: *1 open() "/usr/local/nginx/html/livetheme.css" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /livetheme.css HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/crysanthos"
+2014/03/09 20:16:42 [error] 8058#0: *2 open() "/usr/local/nginx/html/livetheme.css" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /livetheme.css HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/crysanthos"
+2014/03/09 20:16:42 [error] 8058#0: *3 open() "/usr/local/nginx/html/livetheme.css" failed (2: No such file or directory), client: 65.50.74.205, server: localhost, request: "GET /livetheme.css HTTP/1.1", host: "gtstreams.com", referrer: "http://gtstreams.com/crysanthos"
+2014/03/09 20:17:33 [notice] 8067#0: signal process started
+2014/03/09 20:17:49 [notice] 8075#0: signal process started
+2014/03/09 20:18:46 [notice] 8083#0: signal process started
+2014/03/09 20:18:47 [error] 8087#0: *1 directory index of "/usr/local/nginx/html/live/" is forbidden, client: 65.50.74.205, server: localhost, request: "GET /live/ HTTP/1.1", host: "gtstreams.com"
+2014/03/09 20:20:12 [notice] 8100#0: signal process started
+2014/03/09 20:20:33 [notice] 8109#0: signal process started
+2014/03/09 20:20:35 [error] 8113#0: *1 directory index of "/usr/local/nginx/html/live/" is forbidden, client: 65.50.74.205, server: localhost, request: "GET /live/ HTTP/1.1", host: "gtstreams.com"
+2014/03/09 20:20:38 [error] 8113#0: *1 directory index of "/usr/local/nginx/html/live/" is forbidden, client: 65.50.74.205, server: localhost, request: "GET /live/ HTTP/1.1", host: "gtstreams.com"
+2014/03/09 20:21:22 [notice] 8117#0: signal process started
+2014/03/09 20:22:00 [notice] 8155#0: signal process started
+2014/03/09 20:22:06 [error] 8159#0: *1 directory index of "/usr/local/nginx/html/live/" is forbidden, client: 65.50.74.205, server: localhost, request: "GET /live/ HTTP/1.1", host: "gtstreams.com"
+2014/03/09 20:22:36 [notice] 8163#0: signal process started
+2014/03/09 20:22:51 [notice] 8171#0: signal process started
+2014/03/09 20:24:14 [notice] 8196#0: signal process started
+2014/03/09 20:24:21 [notice] 8205#0: signal process started
+2014/03/09 20:24:39 [notice] 8212#0: signal process started
+2014/03/09 20:25:02 [notice] 8219#0: signal process started
