@@ -81,13 +81,16 @@ http {
 
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
         #
-        #location ~ \.php$ {
+        location ~ \.php$ {
+	     fastcgi_split_path_info ^(.+\.php)(/.+)$;
         #    root           html;
-        #    fastcgi_pass   127.0.0.1:9000;
-        #    fastcgi_index  index.php;
+             #fastcgi_pass   127.0.0.1:9000;
+	     fastcgi_pass unix:/var/run/php5-fpm.sock;
+             fastcgi_index  index.php;
         #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-        #    include        fastcgi_params;
-        #}
+             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+             include        fastcgi_params;
+        }
 
         # deny access to .htaccess files, if Apache's document root
         # concurs with nginx's one
@@ -147,7 +150,7 @@ rtmp {
 			live on;
 			record off;
 			allow play all;
-			#push rtmp://live-iad.twitch.tv/app/live_57801912_TPcyybdZf87FGmUp3rpF0Q9CnNmBuI;
+			push rtmp://live-iad.twitch.tv/app/live_57801912_TPcyybdZf87FGmUp3rpF0Q9CnNmBuI;
 		}
 	}
 }
