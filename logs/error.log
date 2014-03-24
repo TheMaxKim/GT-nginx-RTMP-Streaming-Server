@@ -550,3 +550,79 @@
 2014/03/19 22:16:40 [notice] 3671#0: signal process started
 2014/03/20 04:58:54 [notice] 3979#0: signal process started
 2014/03/20 17:24:43 [notice] 3413#0: signal process started
+2014/03/20 17:36:35 [notice] 3858#0: signal process started
+2014/03/20 17:38:10 [notice] 3884#0: signal process started
+2014/03/20 18:01:41 [error] 3888#0: *14 open() "/usr/local/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.249.74.158, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "gtstreams.com"
+2014/03/20 19:14:48 [error] 3888#0: *94 open() "/usr/local/nginx/html/robots.txt" failed (2: No such file or directory), client: 71.6.165.200, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "65.50.75.127"
+2014/03/21 05:53:21 [error] 3888#0: *262 open() "/usr/local/nginx/html/manager/html" failed (2: No such file or directory), client: 218.241.144.134, server: localhost, request: "GET /manager/html HTTP/1.1", host: "65.50.75.127:80"
+2014/03/21 08:49:36 [error] 3888#0: *282 open() "/usr/local/nginx/html/translators.html" failed (2: No such file or directory), client: 50.63.26.163, server: localhost, request: "GET /translators.html HTTP/1.1", host: "65.50.75.127"
+2014/03/21 17:56:08 [error] 3888#0: *364 open() "/usr/local/nginx/html/robots.txt" failed (2: No such file or directory), client: 71.6.167.142, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "65.50.75.127"
+2014/03/22 06:38:16 [notice] 8048#0: signal process started
+2014/03/22 20:40:11 [error] 7640#0: *9 open() "/usr/local/nginx/html/proxy.txt" failed (2: No such file or directory), client: 111.73.45.204, server: localhost, request: "GET http://www.daydaydata.com/proxy.txt HTTP/1.1", host: "www.daydaydata.com"
+2014/03/23 00:32:50 [error] 7640#0: *87 open() "/usr/local/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.249.76.177, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "www.gtstreams.com"
+2014/03/23 04:08:55 [error] 7640#0: *101 "/usr/local/nginx/html/HNAP1/index.html" is not found (2: No such file or directory), client: 98.242.107.243, server: localhost, request: "GET /HNAP1/ HTTP/1.1", host: "65.50.75.127", referrer: "http://65.50.75.127/"
+2014/03/23 06:22:57 [notice] 8740#0: signal process started
+2014/03/24 00:50:16 [error] 3185#0: *120 open() "/usr/local/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.249.65.15, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "www.gtstreams.com"
+2014/03/24 01:07:36 [error] 3185#0: *127 open() "/usr/local/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.249.65.181, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "gtstreams.com"
+2014/03/24 03:26:57 [notice] 14317#0: signal process started
+2014/03/24 12:22:59 [emerg] 4380#0: open() "/usr/local/nginx/conf/conf/fastcgi_params" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:77
+2014/03/24 12:23:46 [emerg] 4395#0: open() "/usr/local/nginx/conf/conf/fastcgi_params" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:77
+2014/03/24 12:24:06 [emerg] 4408#0: invalid number of arguments in "fastcgi_index" directive in /usr/local/nginx/conf/nginx.conf:79
+2014/03/24 12:24:22 [notice] 4411#0: signal process started
+2014/03/24 12:25:17 [notice] 4426#0: signal process started
+2014/03/24 12:27:27 [error] 4427#0: *7 FastCGI sent in stderr: "Access to the script '/usr/local/nginx/html/index.html' has been denied (see security.limit_extensions)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:27:33 [error] 4427#0: *7 FastCGI sent in stderr: "Access to the script '/usr/local/nginx/html/index.html' has been denied (see security.limit_extensions)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:27:47 [error] 4427#0: *11 FastCGI sent in stderr: "Access to the script '/usr/local/nginx/html/index.html' has been denied (see security.limit_extensions)" while reading response header from upstream, client: 128.61.21.29, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "128.61.21.29"
+2014/03/24 12:27:50 [error] 4427#0: *11 FastCGI sent in stderr: "Access to the script '/usr/local/nginx/html/index.html' has been denied (see security.limit_extensions)" while reading response header from upstream, client: 128.61.21.29, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "128.61.21.29"
+2014/03/24 12:28:52 [error] 4427#0: *14 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(127.0.0.1/stats): failed to open stream: No such file or directory in /usr/local/nginx/html/parse.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:28:58 [error] 4427#0: *14 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(127.0.0.1/stats): failed to open stream: No such file or directory in /usr/local/nginx/html/parse.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:28:58 [error] 4427#0: *14 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(127.0.0.1/stats): failed to open stream: No such file or directory in /usr/local/nginx/html/parse.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:31:19 [error] 4427#0: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /usr/local/nginx/html/parse.php:17
+Stack trace:
+#0 /usr/local/nginx/html/parse.php(17): SimpleXMLElement->__construct('?????????????')
+#1 {main}
+  thrown in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:31:20 [error] 4427#0: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /usr/local/nginx/html/parse.php:17
+Stack trace:
+#0 /usr/local/nginx/html/parse.php(17): SimpleXMLElement->__construct('?????????????')
+#1 {main}
+  thrown in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:31:20 [error] 4427#0: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /usr/local/nginx/html/parse.php:17
+Stack trace:
+#0 /usr/local/nginx/html/parse.php(17): SimpleXMLElement->__construct('?????????????')
+#1 {main}
+  thrown in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:31:20 [error] 4427#0: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /usr/local/nginx/html/parse.php:17
+Stack trace:
+#0 /usr/local/nginx/html/parse.php(17): SimpleXMLElement->__construct('?????????????')
+#1 {main}
+  thrown in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:31:20 [error] 4427#0: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /usr/local/nginx/html/parse.php:17
+Stack trace:
+#0 /usr/local/nginx/html/parse.php(17): SimpleXMLElement->__construct('?????????????')
+#1 {main}
+  thrown in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:31:20 [error] 4427#0: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /usr/local/nginx/html/parse.php:17
+Stack trace:
+#0 /usr/local/nginx/html/parse.php(17): SimpleXMLElement->__construct('?????????????')
+#1 {main}
+  thrown in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:33:06 [error] 4427#0: *35 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant bytes_in - assumed 'bytes_in' in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:33:13 [error] 4427#0: *35 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant bytes_in - assumed 'bytes_in' in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 12:37:35 [notice] 4694#0: signal process started
+2014/03/24 13:26:31 [error] 3430#0: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant bytes_in - assumed 'bytes_in' in /usr/local/nginx/html/parse.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:44:51 [error] 3430#0: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"\nNo streams online"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /usr/local/nginx/html/parse.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:44:52 [error] 3430#0: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"\nNo streams online"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /usr/local/nginx/html/parse.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:44:52 [error] 3430#0: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"\nNo streams online"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /usr/local/nginx/html/parse.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:45:40 [error] 3430#0: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"\nNo streams online"' (T_CONSTANT_ENCAPSED_STRING) in /usr/local/nginx/html/parse.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:45:41 [error] 3430#0: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"\nNo streams online"' (T_CONSTANT_ENCAPSED_STRING) in /usr/local/nginx/html/parse.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:48:53 [error] 3430#0: *64 FastCGI sent in stderr: "PHP message: PHP Notice:  Trying to get property of non-object in /usr/local/nginx/html/parse.php on line 24
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /usr/local/nginx/html/parse.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:49:00 [error] 3430#0: *64 FastCGI sent in stderr: "PHP message: PHP Notice:  Trying to get property of non-object in /usr/local/nginx/html/parse.php on line 24
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /usr/local/nginx/html/parse.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:50:17 [error] 3430#0: *69 FastCGI sent in stderr: "PHP message: PHP Notice:  Trying to get property of non-object in /usr/local/nginx/html/parse.php on line 24
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /usr/local/nginx/html/parse.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:57:43 [error] 3430#0: *82 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /usr/local/nginx/html/parse.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:58:55 [error] 3430#0: *151 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file in /usr/local/nginx/html/parse.php on line 34" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 13:59:28 [error] 3430#0: *151 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file in /usr/local/nginx/html/parse.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /parse.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "127.0.0.1"
+2014/03/24 14:25:22 [notice] 5093#0: signal process started

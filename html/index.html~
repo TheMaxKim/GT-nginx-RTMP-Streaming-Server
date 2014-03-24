@@ -8,7 +8,10 @@
  	<!-- Bootstrap -->
  	<link href="css/bootstrap.min.css" rel="stylesheet">
  	<link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <style>
 
+    </style>
 </head>
 
 <body>
@@ -37,6 +40,7 @@
     					<li><a href="/live/shizoli">Shizoli</a></li>
     				</ul>
     			</li>	 
+                <li><a href="#setup">Setup</a></li>     
     			<li><a href="#aboutus">About Us</a></li>   				
     		</ul>
     	</div>
@@ -58,7 +62,7 @@
 
 m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/(.*)$/);
 
-host = "gtstreams.com";
+host = m[1];
 name = "crysanthos";
 
 flowplayer("player", "flowplayer-3.2.18.swf", {
@@ -95,6 +99,10 @@ flowplayer("player", "flowplayer-3.2.18.swf", {
 
 
 </script>
+
+<?php
+echo "hello";
+?>
 
 
 <div id="aboutus"></div>
