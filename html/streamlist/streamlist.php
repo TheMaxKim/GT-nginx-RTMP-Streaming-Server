@@ -66,7 +66,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 
 <?php
 	if ($data->bw_in == 0) {
-		echo "<p>There are no streams online</p>";
+		echo "<p style=\"text-align:center;\">There are no streams online</p>";
 	} else {
 
 		foreach ($data->server->application->live->stream as $stream) {
@@ -74,8 +74,10 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 				$link_name = ucfirst($stream->name);
 				$link = "http://www.gtstreams.com/live/$stream->name";
 				$viewers = $stream->nclients - 1;
+				echo "<div style=\"height:250px;width:300px;float:left;margin:5px;\">";
 				echo "<a href=$link><img data-src=\"holder.js/300x200/#000:#fff/text:$link_name\" alt=\"...\"></a>";
-				echo "<div class=\"caption\">  <p >Viewers: $viewers</p> </div>";
+				echo "<div class=\"caption\">  <p style=\"text-align:center;\">Viewers: $viewers</p> </div>";
+				echo "</div>";
 			}
 
 		}
