@@ -117,10 +117,15 @@ h2,h4 {
 }
 body {
 	background-color: #262626;
+  color: #ffffff;
 }
 
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
 }
 
 .wrapper {

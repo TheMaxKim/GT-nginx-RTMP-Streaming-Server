@@ -1,5 +1,5 @@
 <?php
-$map_url = 'http://127.0.0.1/stats';
+$map_url = 'http://www.gtstreams.com/stats';
 if (($response_xml_data = file_get_contents($map_url))===false){
     echo "Error fetching XML\n";
 } else {
@@ -26,6 +26,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
  	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  	<title>Georgia Tech Streaming</title>
 <script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
+<script src="js/holder.js"></script>
  	<!-- Bootstrap -->
  	<link href="css/bootstrap.min.css" rel="stylesheet">
  	<link href="css/style.css" rel="stylesheet">
@@ -50,19 +51,10 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     		<ul class="nav navbar-nav pull-right" id="section-links">
-    			<li class="active"><a href="#home">Home</a></li>
-    			<li class="dropdown">
-    				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Streams <b class="caret"></b></a>
-    				<ul class="dropdown-menu">
-    					<li><a href="/live/crysanthos">Crysanthos</a></li>
-    					<li><a href="/live/xumasta">XuMasta</a></li>
-    					<li><a href="/live/sunar">Sunar</a></li>
-    					<li><a href="/live/deadjo">Deadjo</a></li>
-    					<li><a href="/live/shizoli">Shizoli</a></li>
-    				</ul>
-    			</li>	 
-                <li><a href="#setup">Setup</a></li>     
-    			<li><a href="#aboutus">About Us</a></li>   				
+    			<li><a href="http://www.gtstreams.com">Home</a></li>
+  				<li class="active"><a href="#">Streams</a></li>	 
+                <li><a href="#">Setup</a></li>     
+    			<li><a href="#">About Us</a></li>   				
     		</ul>
     	</div>
     </div>
@@ -71,6 +63,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 <div id="home"></div>
 	<h2>Stream List</h2>
 </div>
+
 <?php
 	if ($data->bw_in == 0) {
 		echo "<p>There are no streams online</p>";
@@ -79,9 +72,9 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 		foreach ($data->server->application->live->stream as $stream) {
 			if ($stream->bw_in != 0) {
 				$link_name = ucfirst($stream->name);
-				echo "<a href=http://gtstreams.com/live/$stream->name>$link_name</a>";
-			$viewers = $stream->nclients - 1;
-			echo "Viewers: $viewers";
+				$viewers = $stream->nclients - 1;
+				echo "<img data-src=\"holder.js/300x200/#000:#fff/text:$link_name\" alt=\"...\">";
+				echo "<div class=\"caption\">  <p> <a href=http://www.gtstreams.com/live/$stream->name>$link_name</a> Viewers: $viewers</p> </div>";
 			}
 
 		}
