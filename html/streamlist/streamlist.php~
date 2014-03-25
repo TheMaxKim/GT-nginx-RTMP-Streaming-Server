@@ -1,3 +1,24 @@
+<?php
+$map_url = 'http://www.gtstreams.com/stats';
+if (($response_xml_data = file_get_contents($map_url))===false){
+    echo "Error fetching XML\n";
+} else {
+   libxml_use_internal_errors(true);
+   $data = simplexml_load_string($response_xml_data);
+   if (!$data) {
+       echo "Error loading data\n";
+       foreach(libxml_get_errors() as $error) {
+           echo "\t", $error->message;
+       }
+   } else {
+	#echo "Data fetched successfully";
+      	#print_r($data);
+   }
+
+
+	
+}
+?>
 <html>
 
 <head>
@@ -5,6 +26,7 @@
  	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  	<title>Georgia Tech Streaming</title>
 <script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
+<script src="js/holder.js"></script>
  	<!-- Bootstrap -->
  	<link href="css/bootstrap.min.css" rel="stylesheet">
  	<link href="css/style.css" rel="stylesheet">
@@ -29,8 +51,8 @@
 
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     		<ul class="nav navbar-nav pull-right" id="section-links">
-    			<li class="active"><a href="#">Home</a></li>
-    		    <li><a href="/parse.php">Streams</a></li>  	 
+    			<li><a href="http://www.gtstreams.com">Home</a></li>
+  				<li class="active"><a href="#">Streams</a></li>	 
                 <li><a href="#">Setup</a></li>     
     			<li><a href="#">About Us</a></li>   				
     		</ul>
@@ -39,62 +61,35 @@
 </nav>
 
 <div id="home"></div>
-	<h2>Featured Stream</h2>
-
-	<div class="wrapper">
-	<div class="sixteen-by-nine-aspect-ratio"></div>
-	<div id="player"></div>
+	<h2>Stream List</h2>
 </div>
 
+<?php
+	if ($data->bw_in == 0) {
+		echo "<p>There are no streams online</p>";
+	} else {
+
+		foreach ($data->server->application->live->stream as $stream) {
+			if ($stream->bw_in != 0) {
+				$link_name = ucfirst($stream->name);
+				$link = "http://www.gtstreams.com/live/$stream->name";
+				$viewers = $stream->nclients - 1;
+				echo "<a href=$link style="float:left;"><img data-src=\"holder.js/300x200/#000:#fff/text:$link_name\" alt=\"...\"></a>";
+				echo "<div class=\"caption\">  <p >Viewers: $viewers</p> </div>";
+			}
+
+		}
+	}
+?>
 
 <p id="streaminfo"></p>
 
 <script type="text/javascript">
-
-m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/(.*)$/);
-
-host = m[1];
-name = "crysanthos";
-
-flowplayer("player", "flowplayer-3.2.18.swf", {
-	clip: {
-		url: name,
-		live: true,
-		scaling: "fit",
-		provider: "rtmp",
-		bufferLength: 0
-	},
-	canvas: {
-		backgroundGradient: 'none',
-		backgroundColor: '#000000'
-	},
-
-    plugins: {
-	controls: {
-        	url: 'flowplayer.controls-3.2.16.swf',
-        	height: 25,
-		time: false,
-		backgroundGradient: 'none',
-		backgroundColor: '#000000',
-		opacity: 0.6,
-		scrubber: false,
-		volumeColor: '#248AFF'
-        },
-
-	rtmp: {
-            url: "flowplayer.rtmp-3.2.13.swf",
-            netConnectionUrl: "rtmp://" + host + ":10200/live"
-        }
-    }
-});
-
-
 </script>
 
 
 
 <div id="aboutus"></div>
-	<h4>Welcome to the bare bones tech demo of the GT streaming project.</h4>
 
 
 
