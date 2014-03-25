@@ -71,15 +71,22 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 
 		foreach ($data->server->application->live->stream as $stream) {
 			if ($stream->bw_in != 0) {
-				$link_name = ucfirst($stream->name);
-				$link = "http://www.gtstreams.com/live/$stream->name";
+				
 				$viewers = $stream->nclients - 1;
-				echo "<div style=\"height:250px;width:300px;float:left;margin:5px;\">";
-				echo "<a href=$link><img data-src=\"holder.js/300x200/#000:#fff/text:$link_name\" alt=\"...\"></a>";
-				echo "<div class=\"caption\">  <p style=\"text-align:center;\">Viewers: $viewers</p> </div>";
-				echo "</div>";
+				$stream_array["$stream->name"] = "$viewers";
 			}
 
+		}
+		arsort($stream_array);
+		foreach ($stream_array as $name=>$viewer_count) {
+		
+			$link_name = ucfirst($name);
+			$link = "http://www.gtstreams.com/live/$name";
+			echo "<div style=\"height:250px;width:300px;float:left;margin:5px;\">";
+			echo "<a href=$link><img data-src=\"holder.js/300x200/#000:#fff/text:$link_name\" alt=\"...\"></a>";
+			echo "<div class=\"caption\">  <p style=\"text-align:center;\">Viewers: $viewer_count</p> </div>";
+			echo "</div>";
+		
 		}
 	}
 ?>
