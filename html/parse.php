@@ -78,7 +78,8 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 
 		foreach ($data->server->application->live->stream as $stream) {
 			if ($stream->bw_in != 0) {
-				echo "<a href=http://gtstreams.com/live/$stream->name>$stream->name</a>";
+				$link_name = ucfirst($stream->name);
+				echo "<a href=http://gtstreams.com/live/$stream->name>$link_name</a>";
 			$viewers = $stream->nclients - 1;
 			echo "Viewers: $viewers";
 			}
