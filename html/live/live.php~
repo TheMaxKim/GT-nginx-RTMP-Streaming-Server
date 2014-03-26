@@ -28,11 +28,12 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 			}
 
 		}
-		arsort($stream_array);
-		reset($stream_array);
+		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$streamName = basename($actual_link);
+		$streamViewers = $stream_array[$streamName];
 	}
-?>
 
+?>
 <html>
 
 <head>
@@ -90,6 +91,9 @@ m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/live\/(.*)$/);
 host = m[1];
 name = m[2];
 
+//var viewers = +"<?php reset($stream_array); echo each($stream_array)[value];?>" + +1;
+
+
 function capitaliseFirstLetter(string)
 {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -107,6 +111,7 @@ function addApostrophe(string)
 
 //document.getElementById("streaminfo").innerHTML = "Streaming: <b>rtmp://" + host + ":80/live/" + name + "</b>";
 
+var viewers = +"<?php echo $streamViewers ?>" + +1;
 
 document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
 
@@ -116,7 +121,14 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 		live: true,
 		scaling: "fit",
 		provider: "rtmp",
-		bufferLength: 0
+		bufferLength: 0,
+		onStart: function(clip) {
+			setTimeout(updateViewerCount, 3000);
+
+			function updateViewerCount() {
+			   document.getElementById('viewerCount').innerHTML = "Viewers: " + parseInt(viewers,10);
+			}			
+		}
 	},
 	canvas: {
 		backgroundGradient: 'none',
@@ -144,6 +156,8 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 
 
 </script>
+
+<p id="viewerCount" style="text-align:center">Viewers: <?php reset($stream_array); echo each($stream_array)[value];?></p
 
 <!--
 <a id="backbutton" href="http://gtstreams.com">Back</a>

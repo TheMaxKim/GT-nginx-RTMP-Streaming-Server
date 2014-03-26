@@ -45,15 +45,14 @@ http {
 
         location / {
 		location = /streams {
-			root html;
 			try_files /streamlist/streamlist.php =404;
 fastcgi_split_path_info ^(.+\.php)(/.+)$;
-	     fastcgi_pass unix:/var/run/php5-fpm.sock;
-             fastcgi_index  index.php;
-             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-             include        fastcgi_params;
+	 		fastcgi_pass unix:/var/run/php5-fpm.sock;
+         		fastcgi_index  index.php;
+        		fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        		include        fastcgi_params;
 		}
-            index  index.html index.htm;
+            index  index.html index.htm index.php;
         }
 
 
@@ -62,7 +61,11 @@ fastcgi_split_path_info ^(.+\.php)(/.+)$;
 	}
 
 	location /live/ {
-		try_files /live/live.html =404;
+		try_files /live/live.php =404;
+			fastcgi_pass unix:/var/run/php5-fpm.sock;
+         		fastcgi_index  index.php;
+        		fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        		include        fastcgi_params;
 	}
 
 	location = /stats {
