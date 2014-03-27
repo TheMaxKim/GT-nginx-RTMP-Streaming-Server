@@ -38,7 +38,7 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="../flowplayer-3.2.13.min.js"></script>
+<script type="text/javascript" src="../flowplayer/flowplayer-3.2.13.min.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!-- Bootstrap -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -115,7 +115,7 @@ var viewers = +"<?php echo $streamViewers ?>" + +1;
 
 document.getElementById("streamName").innerHTML = addApostrophe(capitaliseFirstLetter(name)) + " Stream";
 
-flowplayer("player", "../flowplayer-3.2.18.swf", {
+flowplayer("player", "../flowplayer/flowplayer-3.2.18.swf", {
 	clip: {
 		url: name,
 		live: true,
@@ -137,7 +137,7 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
 
     plugins: {
 	controls: {
-        	url: '../flowplayer.controls-3.2.16.swf',
+        	url: '../flowplayer/flowplayer.controls-3.2.16.swf',
         	height: 25,
 		time: false,
 		backgroundGradient: 'none',
@@ -148,7 +148,7 @@ flowplayer("player", "../flowplayer-3.2.18.swf", {
         },
 
 	rtmp: {
-            url: "../flowplayer.rtmp-3.2.13.swf",
+            url: "../flowplayer/flowplayer.rtmp-3.2.13.swf",
             netConnectionUrl: "rtmp://" + host + ":10200/live"
         }
     }
