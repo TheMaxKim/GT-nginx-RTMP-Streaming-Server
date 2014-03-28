@@ -135,11 +135,19 @@ html, body {
 
 .wrapper {
 	position: relative;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .sixteen-by-nine-aspect-ratio { padding-bottom: 56.25% }
+
+#playerContainer
+{
+	width: 70%;
+	position: relative;
+	height: auto;
+	margin: 0 auto;
+}
 
 #player
 {
