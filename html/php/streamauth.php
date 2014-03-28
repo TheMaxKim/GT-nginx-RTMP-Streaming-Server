@@ -8,8 +8,7 @@
 	 
 							if ( isset($_POST['passphrase']) && $_POST['passphrase'] != NULL ) {
 									// Check to see if this is a correct passphrase
-									if ($_POST['passphrase'] = "hello") {
-											echo "push rtmp://live-iad.twitch.tv/app/live_29872314_3b5Rwn9ZvHt41sCOBS88ip6pE6baep";
+									if ($_POST['passphrase'] = "password from SQL") {
 											header("HTTP/1.1 202 Accepted"); // 2xx responses will keep session going
 									} else {
 											header("HTTP/1.1 403 Forbidden"); // Drop the session - incorrect passphrase
