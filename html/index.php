@@ -38,10 +38,14 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 	<title>Georgia Tech Streaming</title>
+	<script type="text/javascript" src="../js/jquery-2.1.0.min.js"></script>
+
 	<script type="text/javascript" src="/flowplayer/flowplayer-3.2.13.min.js"></script>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="theme.css" rel="stylesheet">
+
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 	<style>
 
@@ -79,7 +83,6 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 		<div class="wrapper">
 			<div class="sixteen-by-nine-aspect-ratio"></div>
 			<div id="player"></div>
-
 		</div>
 
 	<p id="viewerCount" style="text-align:right; color:white;">Viewers: 0</p>

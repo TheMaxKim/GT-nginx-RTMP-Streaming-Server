@@ -108,3 +108,30 @@
 .navbar-custom .navbar-link:hover {
   color: #ffffff;
 }
+
+.sixteen-by-nine-aspect-ratio { padding-bottom: 56.25% }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#playerContainer
+{
+  width: 70%;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+}
+
+#player
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  background-color: #000;
+}

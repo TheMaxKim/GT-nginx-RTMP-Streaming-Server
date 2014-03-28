@@ -12,14 +12,14 @@ if ($functionName == "getViewerCount") {
 function getViewerCount($streamNameParam) {
 	$map_url = 'http://www.gtstreams.com/stats';
 	if (($response_xml_data = file_get_contents($map_url))===false) {
-		echo "Error fetching XML\n";
+		echo 0;
 	} else {
 		libxml_use_internal_errors(true);
 		$data = simplexml_load_string($response_xml_data);
 		if (!$data) {
-			echo "Error loading data\n";
+			echo 0;
 			foreach(libxml_get_errors() as $error) {
-			echo "\t", $error->message;
+				//echo "\t", $error->message;
 			}
 		} else {
 		#echo "Data fetched successfully";
@@ -39,12 +39,15 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 			}
 
 		}
-		if (array_key_exists($streamNameParam, $stream_array)) {
-			$streamViewers = $stream_array[$streamNameParam];
-			echo $streamViewers;
+		if (isset($stream_array)) {
+			if (array_key_exists($streamNameParam, $stream_array)) {
+				$streamViewers = $stream_array[$streamNameParam];
+				echo $streamViewers;
+			} else {
+				echo 0;
+			}
 		} else {
 			echo 0;
 		}
-
 	}
 }
