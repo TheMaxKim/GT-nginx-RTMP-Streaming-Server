@@ -22,12 +22,13 @@ function getViewerCount($streamNameParam) {
 				//echo "\t", $error->message;
 			}
 		} else {
-		#echo "Data fetched successfully";
+			#echo "Data fetched successfully";
 			#print_r($data);
 		}
-}
+	}
 
 if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
+	echo 0;
 	#echo "<p style=\"text-align:center;\">There are no streams online</p>";
 	} else {
 

@@ -106,7 +106,9 @@ function capitaliseFirstLetter(string)
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-document.getElementById('streamName').innerHTML = "Featured Stream: " + capitaliseFirstLetter(name);
+if (name != "") {
+	document.getElementById('streamName').innerHTML = "Featured Stream: " + capitaliseFirstLetter(name);
+}
 
 flowplayer("player", "/flowplayer/flowplayer-3.2.18.swf", {
 	clip: {
