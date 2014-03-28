@@ -36,7 +36,7 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 	<title>Georgia Tech Streaming</title>
 	<script type="text/javascript" src="/flowplayer/flowplayer-3.2.13.min.js"></script>
 	<!-- Bootstrap -->
@@ -50,35 +50,42 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 
 <body>
 	<!-- Navbar -->
-<nav class="navbar navbar-custom" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">GT Streaming</a>
-		</div>
+	<nav class="navbar navbar-custom" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">GT Streaming</a>
+			</div>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav pull-right" id="section-links">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="/streams">Streams</a></li>  	 
-				<li><a href="#">Setup</a></li>     
-				<li><a href="#">About Us</a></li>   				
-			</ul>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav pull-right" id="section-links">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="/streams">Streams</a></li>  	 
+					<li><a href="/setup">Setup</a></li>  
+					<li><a href="/aboutus">About Us</a></li>    				
+				</ul>
+			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
 
-<div id="home"></div>
+	<div id="home"></div>
 	<h2 id="streamName">Featured Stream</h2>
 
-	<div class="wrapper">
-	<div class="sixteen-by-nine-aspect-ratio"></div>
-	<div id="player"></div>
-</div>
+	<div id="playerContainer">
+		<div class="wrapper">
+			<div class="sixteen-by-nine-aspect-ratio"></div>
+			<div id="player"></div>
+
+		</div>
+
+	<p id="viewerCount" style="text-align:right; color:white;">Viewers: 0</p>
+
+	</div>
+
 
 
 <p id="streaminfo"></p>
@@ -90,6 +97,7 @@ m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/(.*)$/);
 host = m[1];
 name = "<?php echo each($stream_array)[key];?>";
 
+getViewers();
 function capitaliseFirstLetter(string)
 {
 	return string.charAt(0).toUpperCase() + string.slice(1);
@@ -97,24 +105,13 @@ function capitaliseFirstLetter(string)
 
 document.getElementById('streamName').innerHTML = "Featured Stream: " + capitaliseFirstLetter(name);
 
-var viewers = +"<?php reset($stream_array); echo each($stream_array)[value];?>" + +1;
-
 flowplayer("player", "/flowplayer/flowplayer-3.2.18.swf", {
 	clip: {
 		url: name,
 		live: true,
 		scaling: "fit",
 		provider: "rtmp",
-		bufferLength: 0,
-		onStart: function(clip) {
-			setTimeout(updateViewerCount, 3000);
-
-			function updateViewerCount() {
-			   document.getElementById('viewerCount').innerHTML = "Viewers: " + parseInt(viewers,10);
-			}			
-
-			
-		}
+		bufferLength: 0
 	},
 	canvas: {
 		backgroundGradient: 'none',
@@ -140,10 +137,23 @@ flowplayer("player", "/flowplayer/flowplayer-3.2.18.swf", {
 	}
 });
 
+setInterval(getViewers, 5000);
 
+function getViewers() {
+	$.ajax({
+		url:'../php/viewercount.php',
+		type: 'post',
+		data: {functionName: 'getViewerCount', streamName: name},
+		success: function(result) {
+			document.getElementById('viewerCount').innerHTML = "Viewers: " + parseInt(result,10);
+		},
+		error: function(result) {
+			document.getElementById('viewerCount').innerHTML = "Viewers: " + 0;
+		}
+	});
+	return false;
+}
 </script>
-<p id="viewerCount" style="text-align:center">Viewers: <?php reset($stream_array); echo each($stream_array)[value];?></p
-
 
 <div id="aboutus"></div>
 	<h4>Welcome to the bare bones tech demo of the GT streaming project.</h4>
@@ -158,5 +168,3 @@ flowplayer("player", "/flowplayer/flowplayer-3.2.18.swf", {
 </body>
 
 </html>
-
-
