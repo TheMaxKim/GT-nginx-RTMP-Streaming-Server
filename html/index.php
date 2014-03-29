@@ -85,7 +85,10 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 			<div id="player"></div>
 		</div>
 
-	<p id="viewerCount" style="text-align:right; color:white;">Viewers: 0</p>
+	<div align="right" style="margin: 0px; padding: 0px;">
+		<img src="/img/guy.png" style="vertical-align: baseline;">
+		<p id="viewerCount" style="display:inline-block; font-size: 22px; vertical-align: baseline; color:white;">0</p>
+	</div>
 
 	</div>
 
@@ -98,7 +101,7 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 m = location.href.match(/^http:\/\/([a-zA-Z0-9._-]+)\/(.*)$/);
 
 host = m[1];
-name = "<?php echo each($stream_array)[key];?>";
+name = "<?php echo each($stream_array)['key'];?>";
 
 getViewers();
 function capitaliseFirstLetter(string)
@@ -150,10 +153,10 @@ function getViewers() {
 		type: 'post',
 		data: {functionName: 'getViewerCount', streamName: name},
 		success: function(result) {
-			document.getElementById('viewerCount').innerHTML = "Viewers: " + parseInt(result,10);
+			document.getElementById('viewerCount').innerHTML = parseInt(result,10);
 		},
 		error: function(result) {
-			document.getElementById('viewerCount').innerHTML = "Viewers: " + 0;
+			document.getElementById('viewerCount').innerHTML = 0;
 		}
 	});
 	return false;

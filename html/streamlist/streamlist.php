@@ -25,7 +25,6 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 	<title>Georgia Tech Streaming</title>
-	<script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
 	<script src="js/holder.js"></script>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +93,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 			echo "<p style=\"text-align:center;\">$link_name</p>";
 			echo "<a href=$link><img src=\"thumbnails/$thumbnail_name\" alt=\"Image not found\"></a>";
 			#echo "<a href=$link><img data-src=\"holder.js/300x200/#000:#fff/text:$link_name\" alt=\"...\"></a>";
-			echo "<div class=\"caption\"> <p style=\"text-align:center;\">Viewers: $viewer_count</p> </div>";
+			echo "<div class=\"caption\"><p style=\"text-align:center;\">Viewers: $viewer_count</p> </div>";
 			echo "</div>";
 		
 		}
