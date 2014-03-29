@@ -36,6 +36,11 @@ if ($data->bw_in == 0 || $data->server->application->live->nclients == 0) {
 			if ($stream->bw_in != 0) {
 				
 				$viewers = $stream->nclients - 1;
+				foreach ($stream->client as $client) {
+					if ($client->address == "127.0.0.1") {
+						$viewers--;
+					}
+				}
 				$stream_array["$stream->name"] = "$viewers";
 			}
 
