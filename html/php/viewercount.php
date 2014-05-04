@@ -10,7 +10,7 @@ if ($functionName == "getViewerCount") {
 }
 
 function getViewerCount($streamNameParam) {
-	$map_url = 'http://www.gtstreams.com/stats';
+	$map_url = 'http://127.0.0.1/stats';
 	if (($response_xml_data = file_get_contents($map_url))===false) {
 		echo 0;
 	} else {

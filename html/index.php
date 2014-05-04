@@ -1,5 +1,5 @@
 <?php
-	$map_url = 'http://www.gtstreams.com/stats';
+	$map_url = 'http://127.0.0.1/stats';
 	if (($response_xml_data = file_get_contents($map_url))===false){
 		echo "Error fetching XML\n";
 	} else {
@@ -119,7 +119,7 @@ flowplayer("player", "/flowplayer/flowplayer-3.2.18.swf", {
 		live: true,
 		scaling: "fit",
 		provider: "rtmp",
-		bufferLength: 0
+		bufferLength: 0.01
 	},
 	canvas: {
 		backgroundGradient: 'none',
