@@ -9,15 +9,15 @@ Install packages for building nginx
 <pre><code>$ sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev</code></pre>  
 
 Download nginx tarball  
-<pre><code>$ wget http://nginx.org/download/nginx-1.5.11.tar.gz</code></pre>  
+<pre><code>$ wget http://nginx.org/download/nginx-1.7.0.tar.gz</code></pre>  
 
 Download rtmp module for nginx  
 <pre><code>$ wget https://github.com/arut/nginx-rtmp-module/archive/master.zip</code></pre>  
 
 Extract both downloads  
-<pre><code>$ tar -zxvf nginx-1.5.11.tar.gz  
+<pre><code>$ tar -zxvf nginx-1.7.0.tar.gz  
 $ unzip master.zip  
-$ cd nginx-1.5.11</code></pre>  
+$ cd nginx-1.7.0</code></pre>  
 
 Build nginx
 <pre><code>$ ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module-master  
