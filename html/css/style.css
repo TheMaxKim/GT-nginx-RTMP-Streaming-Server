@@ -110,7 +110,14 @@
 .navbar-custom .navbar-link:hover {
   color: #ffffff;
 }
-h2,h4 {
+
+img.setup {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,h2,h4 {
 	color: #ffffff;
 	text-align: center;
 	font-weight: bold;
@@ -126,6 +133,11 @@ html, body {
 }
 p {
   color: #ffffff;
+}
+p.setup {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
 }
 
 .wrapper {

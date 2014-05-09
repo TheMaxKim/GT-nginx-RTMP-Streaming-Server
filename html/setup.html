@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<title>Georgia Tech Streaming</title>
+	<script type="text/javascript" src="../js/jquery-2.1.0.min.js"></script>
+
+	<script type="text/javascript" src="/flowplayer/flowplayer-3.2.13.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="theme.css" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-custom" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">GT Streaming</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav pull-right" id="section-links">
+					<li><a href="http://www.gtstreams.com">Home</a></li>
+					<li><a href="http://www.gtstreams.com/streams">Streams</a></li>  	 
+					<li class="active"><a href="#">Setup</a></li>  
+					<li><a href="http://www.gtstreams.com/aboutus">About Us</a></li>    				
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+	<h2>Setup Guide</h2>
+	<p class="setup">This guide assumes that you already have Open Broadcaster Software installed. There are plenty of guides out there for figuring out the best broadcast and encoding settings not specified here.</p>
+	<img class="setup" src="img/setupone.png">
+	<p class="setup">Type in a name for a new profile in OBS to preserve your current stream settings, and hit “Add.”</p>
+	<p class="setup">Next, head to “Broadcast Settings” on the left, and you should see the screen below.</p>
+	<img class="setup" src="img/setuptwo.png">
+	<p class="setup">Click the dropdown box next to “Streaming Service,” and choose “Custom.” For Server, put “rtmp://gtstreams.com:10200/live” without the quotes. Next, type the desired name of your stream in “Play Path/Stream Key (if any)”.<br>Due to the early development phase that the site is currently in, please refrain from using any special characters or spaces in the name of your stream.<br>That’s all! Hit “Apply” and you should start broadcasting. Within a few seconds, you should be able to see your stream on GTStreams under the stream list.</p>
+	<br></br>
+
+<!--JavaScript-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
