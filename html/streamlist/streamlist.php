@@ -52,8 +52,8 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 				<ul class="nav navbar-nav pull-right" id="section-links">
 					<li><a href="http://www.gtstreams.com">Home</a></li>
 					<li class="active"><a href="#">Streams</a></li>	 
-								<li><a href="#">Setup</a></li>     
-					<li><a href="#">About Us</a></li>   				
+								<li><a href="http://www.gtstreams.com/setup">Setup</a></li>     
+					<li><a href="http://www.gtstreams.com/aboutus">About Us</a></li>   				
 				</ul>
 			</div>
 		</div>
