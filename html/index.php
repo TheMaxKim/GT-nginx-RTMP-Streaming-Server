@@ -163,8 +163,10 @@ function getViewers() {
 }
 </script>
 
-<div id="aboutus"></div>
-	<h4>Welcome to the bare bones tech demo of the GT streaming project.</h4>
+<div align="center">
+	<iframe src="https://kiwiirc.com/client/chat.freenode.net/?&theme=cli#GT" align="middle" style="border:0; width:50%; height:450px;"></iframe>	
+</div>
+
 
 
 
