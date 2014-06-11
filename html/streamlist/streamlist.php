@@ -45,7 +45,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">GT Streaming</a>
+					<a class="navbar-brand" href="http://www.gtstreams.com">GT Streaming</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
