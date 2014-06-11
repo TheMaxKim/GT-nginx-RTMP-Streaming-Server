@@ -29,6 +29,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="theme.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<style>
 
@@ -52,7 +53,7 @@ if (($response_xml_data = file_get_contents($map_url))===false){
 				<ul class="nav navbar-nav pull-right" id="section-links">
 					<li><a href="http://www.gtstreams.com">Home</a></li>
 					<li class="active"><a href="#">Streams</a></li>	 
-								<li><a href="http://www.gtstreams.com/setup">Setup</a></li>     
+					<li><a href="http://www.gtstreams.com/setup">Setup</a></li>     
 					<li><a href="http://www.gtstreams.com/aboutus">About Us</a></li>   				
 				</ul>
 			</div>
